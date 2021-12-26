@@ -1,0 +1,10 @@
+@mixin fonts($fw, $fz, $fh, $ls) {
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $fh;
+    letter-spacing: $ls;
+}
+%navi{
+    display: flex;
+    align-items: center;
+}

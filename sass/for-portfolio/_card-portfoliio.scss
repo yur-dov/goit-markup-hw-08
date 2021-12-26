@@ -1,0 +1,67 @@
+.portfolio-title {
+    @include fonts (700, 18px, 2, 0.06em);
+    color: var(--main-title-color);
+    font-style: normal;    
+}
+.about-title {
+    color: var(--main-text-color);
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    margin-top: 4px;
+}
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+.portfolio-list {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.card-text {
+    padding: 20px 24px;
+    border: 1px solid #eeeeee;
+    border-top: none;
+}
+.card {
+    text-decoration: none;
+    display: block;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: box-sadow;
+    &:hover,
+    &:focus{
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+
+.card-animation {
+    position: relative;
+    overflow: hidden;
+}
+.card:focus .overlay{
+    transform: translatey(0);
+}
+.box:hover .overlay{
+    transform: translatey(0);
+}
+.overlay {    
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 101%;
+    background: #2196f3e5;
+    transform: translatey(100%);
+    transition: transform 250ms ease;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.text-animation {
+    @include fonts(400, 18px, 1.55, 0.03em);
+    padding: 63px 24px;
+    font-style: normal;
+    color: #ffffff;
+}

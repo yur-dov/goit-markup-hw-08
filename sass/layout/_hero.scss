@@ -1,0 +1,34 @@
+.main-hero {
+    background-image: linear-gradient(#2f303a66 10%, #2f303a66 80%),
+url(../images/bg-global.jpg);
+@media screen and (max-width: 480px){
+    background-image: url(../../images/img-adaptiv/hero-x1.png);
+}
+    background-repeat: no-repeat;
+    text-align: center;
+    align-items: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-position: center;
+    max-height: 600px;
+}
+.hero__title {
+    @include fonts(900, 44px, 1.36, 0.06em);
+    color: var(--general-color);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.hero__btn {
+    @include fonts(700, 16px, 1.87, 0.06em);
+    color: var(--general-color);
+    background: var(--accent-color);
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    font-family: inherit;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+}

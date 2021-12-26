@@ -1,0 +1,37 @@
+.concept__title {
+    @include fonts(700, 14px, 1.14, 0.03em);
+    color: #212121;
+    font-style: normal;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.concept__description {
+    @include fonts(400, 14px, 1.71, 0.04em);
+    color: var(--main-text-color);
+}
+.concept__icon {
+    display: block;
+    height: 120px;
+    width: 270px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+.concept__icon-svg {
+    background-color: #f5f4fa;
+    margin: 25px 100px;
+}
+.concept__wrapp {
+    display: flex;
+    justify-content: space-between;
+}
+.concept__list {
+    width: 270px;
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.concept {
+    padding-bottom: 0;
+}

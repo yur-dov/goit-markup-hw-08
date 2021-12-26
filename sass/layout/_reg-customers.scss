@@ -1,0 +1,31 @@
+.custom__title {
+    @include fonts(700, 36px, 1.16, 0.03em);
+    text-align: center;
+    margin-bottom: 50px;
+}
+.custom__list {
+    display: flex;
+    justify-content: space-between;
+}
+.custom__link {
+    display: flex;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--color-for-svg);
+    transition-property: border, color;
+    &:focus,
+    &:hover {
+        border: 1px solid #2196f3;
+        color: var(--accent-color);
+        fill: currentColor;
+    }
+}
+
+.company-icon {
+    fill: currentColor;
+}
+.custom__item:not(:last-child) {
+    margin-right: 30px;
+}

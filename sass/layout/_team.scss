@@ -1,0 +1,68 @@
+.section-our-team {
+    background: #f5f4fa;
+}
+.members__title{
+    @include fonts(700, 36px, 1.16, 0.03em);
+    color: var(--main-title-color);
+    text-align: center;
+    margin-bottom: 50px;
+}
+.card-team__name {
+    @include fonts(500, 16px, 1.18, 0.03em);
+    color: var(--main-title-color);
+    text-align: center;
+    margin-bottom: 10px;
+}
+.card-team__about {
+    @include fonts(400, 16px, 1.18, 0.03em);
+    color: var(--main-text-color);
+    text-align: center;
+    margin-bottom: 16px;
+}
+.members__list {
+    display: flex;
+    margin-right: -30px;
+}
+.members__item {
+    flex-basis: calc(100% / 4 - 30px);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+        &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.members__card-team {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background: #ffffff;
+    text-align: center;
+    border-radius: 0px 0px 4px 4px;
+}
+.social {
+    display: flex;
+    justify-content: center;
+}
+.social__item:not(:last-child) {
+    margin-right: 10px;
+}
+.social__link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--color-for-svg);
+    transition-duration: 250ms;
+    transition-property: background-color, color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus,
+    &:hover {
+        background-color: var(--accent-color);
+        color: var(--general-color);
+    }
+}
+.person-soc-link {
+    margin: 12px;
+    fill: currentColor;
+}

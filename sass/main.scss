@@ -1,0 +1,25 @@
+
+@import "./utils/variables";
+
+@import "./base/reset";
+@import "./utils/placeholders";
+@import "./components/containeer";
+@import "./layout/modal";
+
+
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/concept";
+@import "./layout/we-doing";
+@import "./layout/team";
+@import "./layout/reg-customers";
+@import "./layout/footer";
+
+
+@import "./for-portfolio/filtr_portfolio";
+@import "./for-portfolio/card-portfoliio";
+
+
+@import "./utils/hidden-title-filters";
+@import "./utils/mobile-style";
