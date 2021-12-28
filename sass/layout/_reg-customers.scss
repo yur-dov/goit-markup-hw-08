@@ -1,6 +1,8 @@
 .custom{
-
-
+margin-left: 0px;
+}
+.custom__list-wrap{
+    margin-left: 15px;
 }
 .section-customers{
     width: 480px;
@@ -13,6 +15,7 @@
 .custom__list {
     // display: flex;
     // justify-content: space-between;
+    
     display: inline-flex;
     flex-wrap: wrap;
     margin-top: -30px;

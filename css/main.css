@@ -451,6 +451,14 @@ body {
   border: none;
 }
 
+.concept__conteiner {
+  margin-left: 0;
+}
+
+.concept__wrapp {
+  margin-left: 15px;
+}
+
 @media screen and (min-width: 481px) {
   .concept__wrapp {
     display: inline-flex;
@@ -676,6 +684,14 @@ body {
 .person-soc-link {
   margin: 12px;
   fill: currentColor;
+}
+
+.custom {
+  margin-left: 0px;
+}
+
+.custom__list-wrap {
+  margin-left: 15px;
 }
 
 .section-customers {

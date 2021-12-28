@@ -1,7 +1,9 @@
-.concept {
-    // padding-bottom: 0;
+
+.concept__conteiner{
+    margin-left: 0;
 }
 .concept__wrapp {
+    margin-left: 15px;
     @media screen and (min-width: 481px) {
         display: inline-flex;
         flex-wrap: wrap;
