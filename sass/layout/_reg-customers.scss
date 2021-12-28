@@ -1,11 +1,30 @@
+.custom{
+
+
+}
+.section-customers{
+    width: 480px;
+}
 .custom__title {
     @include fonts(700, 36px, 1.16, 0.03em);
     text-align: center;
     margin-bottom: 50px;
 }
 .custom__list {
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+.custom__item{
+    // margin-right: 30px;
+    
+    width: 210px;
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc(100%/ 2 -30px);
 }
 .custom__link {
     display: flex;
@@ -22,10 +41,6 @@
         fill: currentColor;
     }
 }
-
 .company-icon {
     fill: currentColor;
-}
-.custom__item:not(:last-child) {
-    margin-right: 30px;
 }
