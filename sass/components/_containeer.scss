@@ -1,16 +1,14 @@
 .conteiner {
-    width: 100%;
-    margin-left: 15px;
-    margin-right: 15px;
-    @media screen and (min-width:480px) {
-        width: 738px;
-        margin-left: 15px;
-    }
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and(min-width:1200px) {
+    width: 1200px;
+  }
 }
 .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    @media screen and (max-width:480px) {
-
-    }
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
