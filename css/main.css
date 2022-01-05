@@ -39,7 +39,8 @@ body {
   margin: 0;
 }
 
-.navi, .header-navi {
+.navi, .header-navi, .contact__link-mail,
+.contact__link-tel {
   display: flex;
   align-items: center;
 }
@@ -331,6 +332,26 @@ body {
 @media screen and (min-width: 768px) {
   .header-block {
     width: 768px;
+    height: 80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-block {
+    width: 100%;
+    max-width: 1600px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navi {
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: space-between;
   }
 }
 
@@ -364,6 +385,16 @@ body {
 @media screen and (min-width: 768px) {
   .header-navi__logo {
     margin-right: 88px;
+    margin-top: 26px;
+    margin-bottom: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-navi__logo {
+    margin-right: 93px;
+    margin-top: 26px;
+    margin-bottom: 26px;
   }
 }
 
@@ -415,13 +446,9 @@ body {
   border-radius: 2px;
 }
 
-.header__contact {
-  margin-left: 102px;
-}
-
-@media screen and (max-width: 767px) {
-  .header__contact {
-    display: none;
+@media screen and (min-width: 768px) {
+  .header-navi__link.active::after {
+    bottom: -33px;
   }
 }
 
@@ -439,6 +466,35 @@ body {
 
 .header-navi__link:hover, .header-navi__link:focus {
   color: var(--accent-color);
+}
+
+.header__contact {
+  margin-left: 84px;
+  margin-top: 21px;
+}
+
+@media screen and (max-width: 767px) {
+  .header__contact {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__contact {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+  }
+}
+
+.contact__item {
+  display: flex;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .contact__link-mail,
@@ -467,20 +523,28 @@ body {
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.02em;
+    display: flex;
+    margin-bottom: 10px;
   }
 }
 
-.contact__item {
-  display: inline;
+@media screen and (min-width: 1200px) {
+  .contact__link-mail,
+  .contact__link-tel {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.61;
+    letter-spacing: 0.02em;
+  }
 }
 
 .contact__mail-icon {
-  margin-right: 10px;
+  margin-right: 8px;
   fill: currentColor;
 }
 
 .contact__tel-icon {
-  margin-right: 10px;
+  margin-right: 8px;
   fill: currentColor;
 }
 
@@ -1062,17 +1126,17 @@ body {
   background: var(--fonts-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  max-height: 252px;
-}
-
-.footer {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  width: 100%;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer__contact {
   margin-right: 70px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer__logo {
@@ -1085,10 +1149,16 @@ body {
   font-style: normal;
   margin-bottom: 20px;
   display: block;
+  margin-left: 163px;
+  margin-right: 163px;
 }
 
 .footer__logo > span {
   color: var(--general-color);
+}
+
+.footer__contact-list {
+  display: block;
 }
 
 .footer__contact-item:not(:last-child) {
@@ -1145,17 +1215,13 @@ body {
   fill: var(--general-color);
 }
 
-.footer__social-block {
-  margin-right: 94px;
-}
-
 .subscript__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 12px;
 }
 
@@ -1167,7 +1233,7 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding: 15px 16px;
-  background: #2F303A;
+  background: #2f303a;
   margin-right: 12px;
 }
 
@@ -1179,17 +1245,12 @@ body {
   cursor: pointer;
   width: 200px;
   height: 50px;
-  background: #2196F3;
+  background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: var(--general-color);
   border: none;
   padding-left: 29px;
-}
-
-.btn__label {
-  display: flex;
-  align-items: center;
 }
 
 .btn__icon-telegram {
