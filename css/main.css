@@ -456,6 +456,10 @@ body {
   color: var(--accent-color);
 }
 
+.header-menu__link.active {
+  color: var(--accent-color);
+}
+
 .header-navi__link {
   font-weight: 500;
   font-size: 14px;
@@ -605,7 +609,6 @@ body {
 }
 
 .contact-menu__link-tel {
-  font-family: Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 34px;
@@ -624,7 +627,8 @@ body {
 }
 
 .soc-link-menu {
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
   margin-left: 40px;
   font-style: normal;
   font-weight: 500;
@@ -640,6 +644,22 @@ body {
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.02em;
+  margin-right: 20px;
+  position: relative;
+}
+
+.menu-soc-link__link:not(:last-child) {
+  margin-right: 20px;
+}
+
+.soc-link__befor::before {
+  content: "";
+  position: absolute;
+  right: -10px;
+  bottom: 0;
+  width: 2px;
+  height: 100%;
+  background-color: rgba(33, 33, 33, 0.2);
 }
 
 .main-hero {
