@@ -117,6 +117,9 @@
     }
   }
 }
+.active {
+  color: var(--accent-color);
+}
 
 .header-navi__link {
   @include fonts(500, 14px, 1.14, 0.02em);
@@ -219,9 +222,7 @@
   letter-spacing: 0.02em;
   margin-bottom: 32px;
 }
-.active {
-  color: var(--accent-color);
-}
+
 .header-menu__contact {
   display: block;
   margin-top: 302px;
