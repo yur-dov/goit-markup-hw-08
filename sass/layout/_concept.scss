@@ -1,3 +1,9 @@
+.concept {
+  @media screen and(min-width:1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .concept__box {
   max-width: 738px;
   margin-right: auto;

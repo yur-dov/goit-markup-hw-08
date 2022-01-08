@@ -751,6 +751,13 @@ body {
   border: none;
 }
 
+@media screen and (min-width: 1200px) {
+  .concept {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .concept__box {
   max-width: 738px;
   margin-right: auto;
@@ -857,6 +864,12 @@ body {
 @media screen and (max-width: 1199px) {
   .we-doing {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .we-doing {
+    padding-top: 0;
   }
 }
 
@@ -1078,6 +1091,8 @@ body {
   .section-customers {
     width: 1170px;
     max-width: 1200px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
