@@ -37,14 +37,19 @@
 .card-set {
   display: flex;
   flex-wrap: wrap;
+
   @media screen and(min-width:768px) {
     margin-left: -30px;
     margin-top: -30px;
   }
 }
 .portfolio-list {
+  &:not(:last-child) {
+    @media screen and(max-width:767px) {
+      margin-bottom: 30px;
+    }
+  }
   width: 450px;
-  margin-bottom: 30px;
   @media screen and(min-width:768px) {
     width: 354px;
     flex-basis: calc(100% / 2 - 30px);
