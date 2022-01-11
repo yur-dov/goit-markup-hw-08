@@ -39,9 +39,7 @@ body {
   margin: 0;
 }
 
-.navi,
-.header-navi,
-.contact__link-mail,
+.navi, .header-navi, .contact__link-mail,
 .contact__link-tel {
   display: flex;
   align-items: center;
@@ -110,8 +108,7 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
@@ -134,8 +131,7 @@ body {
   cursor: pointer;
 }
 
-.close-btn:hover,
-.close-btn:focus {
+.close-btn:hover, .close-btn:focus {
   fill: var(--accent-color);
 }
 
@@ -493,8 +489,7 @@ body {
   position: relative;
 }
 
-.header-navi__link:hover,
-.header-navi__link:focus {
+.header-navi__link:hover, .header-navi__link:focus {
   color: var(--accent-color);
 }
 
@@ -540,8 +535,7 @@ body {
   transition-property: color;
 }
 
-.contact__link-mail:focus,
-.contact__link-mail:hover,
+.contact__link-mail:focus, .contact__link-mail:hover,
 .contact__link-tel:focus,
 .contact__link-tel:hover {
   color: var(--accent-color);
@@ -691,8 +685,7 @@ body {
 }
 
 .main-hero {
-  background-image: linear-gradient(#2f303a66 10%, #2f303a66 80%),
-    url(../images/img-for-hw8/img/hero/hero.jpg);
+  background-image: linear-gradient(#2f303a66 10%, #2f303a66 80%), url(../images/img-for-hw8/img/hero/hero.jpg);
   background-repeat: no-repeat;
   text-align: center;
   align-items: center;
@@ -703,18 +696,13 @@ body {
 
 @media screen and (min-width: 768px) {
   .main-hero {
-    background-image: linear-gradient(#2f303a66 10%, #2f303a66 80%),
-      url(../images/img-for-hw8/img/hero/hero-tablet.jpg);
+    background-image: linear-gradient(#2f303a66 10%, #2f303a66 80%), url(../images/img-for-hw8/img/hero/hero-tablet.jpg);
   }
 }
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
-  screen and (min-width: 768px) and (min-resolution: 192dpi),
-  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .main-hero {
-    background-image: linear-gradient(#2f303a66 10%, #2f303a66 80%),
-      url(../images/img-for-hw8/img/hero/hero-tablet2x.jpg);
+    background-image: linear-gradient(#2f303a66 10%, #2f303a66 80%), url(../images/img-for-hw8/img/hero/hero-tablet2x.jpg);
   }
 }
 
@@ -722,18 +710,13 @@ body {
   .main-hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(#2f303a66 10%, #2f303a66 80%),
-      url(../images/img-for-hw8/img/hero/hero-desktop.jpg);
+    background-image: linear-gradient(#2f303a66 10%, #2f303a66 80%), url(../images/img-for-hw8/img/hero/hero-desktop.jpg);
   }
 }
 
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
-  screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
-  screen and (min-width: 1200px) and (min-resolution: 192dpi),
-  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .main-hero {
-    background-image: linear-gradient(#2f303a66 10%, #2f303a66 80%),
-      url(../images/img-for-hw8/img/hero/hero-desktop2x.jpg);
+    background-image: linear-gradient(#2f303a66 10%, #2f303a66 80%), url(../images/img-for-hw8/img/hero/hero-desktop2x.jpg);
   }
 }
 
@@ -942,8 +925,7 @@ body {
 
 .members__item {
   width: 450px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -1011,8 +993,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social__link:focus,
-.social__link:hover {
+.social__link:focus, .social__link:hover {
   background-color: var(--accent-color);
   color: var(--general-color);
 }
@@ -1069,8 +1050,7 @@ body {
   transition-property: border, color;
 }
 
-.custom__link:focus,
-.custom__link:hover {
+.custom__link:focus, .custom__link:hover {
   border: 1px solid #2196f3;
   color: var(--accent-color);
   fill: currentColor;
@@ -1099,7 +1079,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .footer {
-    /* align-item: baseline; */
+    align-item: baseline;
     justify-content: space-between;
   }
 }
@@ -1114,7 +1094,6 @@ body {
     margin: 0;
     display: inline-block;
     text-align: start;
-    margin-right: 70px;
   }
 }
 
@@ -1161,8 +1140,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer__contact-mail:hover,
-.footer__contact-mail:focus,
+.footer__contact-mail:hover, .footer__contact-mail:focus,
 .footer__contact-tel:hover,
 .footer__contact-tel:focus {
   color: var(--accent-color);
@@ -1177,6 +1155,7 @@ body {
   .footer__social-block {
     display: inline-block;
     text-align: left;
+    margin-bottom: 0;
   }
 }
 
@@ -1305,12 +1284,10 @@ body {
   transition-property: background-color, color, box-sadow;
 }
 
-.portfolio-btn:focus,
-.portfolio-btn:hover {
+.portfolio-btn:focus, .portfolio-btn:hover {
   color: var(--general-color);
   background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .list-btn {
@@ -1451,10 +1428,8 @@ body {
   transition-property: box-sadow;
 }
 
-.card:hover,
-.card:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+.card:hover, .card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 @media screen and (min-width: 768px) {
